@@ -1,0 +1,120 @@
+@import '../styles/base';
+
+.homepage_section{
+    max-height: 80vh;
+    height: 600px;
+    width: 100%;
+    background-color: $white2;
+    display: flex;
+
+    .homepage_section_container{
+        box-sizing: border-box;
+        padding: 50px;
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        height: 100%
+
+    }
+}
+
+.homepage_section_content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    .section_audience_container{
+        display: flex;
+        align-items: center;
+
+        #audienceIcon{
+            margin-right: 30px;
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+        }
+    }
+
+    .section_tabs{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .section_tab{
+            margin-right: 22px;
+            border-radius: 20px;
+            padding: 8px 20px;
+            border: none;
+            outline: 0;
+            background-color: $white2;
+            border: 2px solid transparent;
+        }
+
+        .section_tab:hover{
+            cursor: pointer;
+            // background-color: $gray2;
+            border: 2px solid $borders;
+        }
+
+        .section_tab_active{
+            box-shadow: 0px 6px 15px 0px rgba($primary,0.25);
+            color: $white;
+            background-color: $primary;
+            border: 2px solid $primary;
+        }
+
+        .section_tab_active:hover{
+            cursor: pointer;
+            color: $white;
+            background-color: $primary;
+            border: 2px solid $primary;
+        }
+    }
+
+    .section_titles{
+        margin-top: 30px;
+
+        #section_subtitle{
+            margin-top: 8px;
+            width: 500px;
+        }
+    }
+
+    .section_cta_buttons{
+        margin-top: auto;
+        
+        #get_started{
+            outline: 0;
+            border: none;
+            border-radius: 4px;
+            color: $white;
+            background-color: $primary;
+            padding: 14px 30px;
+        }
+        #get_started:hover{
+            cursor: pointer;
+            background-color: $primary-dark;
+        }
+    }
+}
+
+
+.homepage_section_image_container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #section_image{
+
+        #section_image{
+            height: 400px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

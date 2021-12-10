@@ -1,0 +1,205 @@
+// making @media query for mobile and desktop easier
+// just type: @include mobile {<content goes here>} see ex' below.
+@import './screens';
+@import './colors';
+
+@mixin mobile {
+    @media (max-width: $tablet) {
+      @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $tablet) {
+      @content;
+    }
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 40px;
+    }
+
+    @include desktop{
+        font-size: 60px;
+    }
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 36px;
+    }
+
+    @include desktop{
+        font-size: 42px;
+    }
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 28px;
+    }
+
+    @include desktop{
+        font-size: 32px;
+    }
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 20px;
+    }
+
+    @include desktop{
+        font-size: 22px;
+    }
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 16px;
+    }
+
+    @include desktop{
+        font-size: 18px;
+    }
+}
+
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: $text-main;
+
+    @include mobile{
+        font-size: 14px;
+    }
+
+    @include desktop{
+        font-size: 16px;
+    }
+}
+
+// paragraphs split into 2 families
+// b is "body", g is "gray"
+// b1 is the biggest, b7 is the smallest
+
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.g1,.g2,.g3,.g4,.g5,.g6,.g7,h1,h2,h3,h4,h5,h6{
+    font-family: 'Inter', sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.g1 {
+    font-weight: 500;
+    color: $text-gray;
+    font-size: 22px;
+}
+
+.g2 {
+    font-weight: 500;
+    color: $text-gray;
+    font-size: 20px;
+}
+
+.g3 {
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    color: $text-gray;
+    font-size: 18px;
+}
+
+.g4 {
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    color: $text-gray;
+    font-size: 16px;
+}
+
+.g5 {
+    font-weight: normal;
+    color: $text-gray;
+    font-size: 14px;
+}
+
+.g6 {
+    font-weight: normal;
+    color: $text-gray;
+    font-size: 12px;
+}
+
+.g7 {
+    font-weight: normal;
+    color: $text-gray;
+    font-size: 11px;
+}
+
+
+.b1{
+    font-weight: 500;
+    color: $text-main;
+    font-size: 22px;
+}
+
+.b2{
+    font-weight: 500;
+    color: $text-main;
+    font-size: 20px;
+}
+
+.b3{
+    font-weight: 500;
+    color: $text-main;
+    font-size: 18px;
+}
+
+.b4{
+    font-weight: 500;
+    color: $text-main;
+    font-size: 16px;
+}
+
+.b5{
+    font-weight: 400;
+    color: $text-main;
+    font-size: 14px;
+}
+
+.b6{
+    font-weight: 400;
+    color: $text-main;
+    font-size: 12px;
+}
+
+.b7{
+    font-weight: 400;
+    color: $text-main;
+    font-size: 11px;
+}
