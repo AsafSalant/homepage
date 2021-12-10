@@ -93,6 +93,7 @@
             color: $white;
             background-color: $primary;
             padding: 14px 30px;
+            box-shadow: 0px 5px 18px rgba($primary,0.24);
         }
         #get_started:hover{
             cursor: pointer;
